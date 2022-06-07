@@ -21,11 +21,26 @@ const text = "hello";
 wordCounter(text);
 Expected Output : 1
 
+<-----------------test 2---------------------->
+
 Test : "It should return 2 if a passage has two words."
 code:
 const text = "hello";
 wordCounter(text);
 Expected Output: 2
+
+<-----------------test 3---------------------->
+
+Test: "It should return 0 for an empty string."
+Code: wordCounter(" ");
+Expected Output:0
+
+<-----------------test 4---------------------->
+
+Test: "It should return 0 for a string that is only spaces."
+Code: wordCounter("           ");
+Expected Output: 0
+
 
 {This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}
 
