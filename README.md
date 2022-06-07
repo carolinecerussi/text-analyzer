@@ -83,6 +83,23 @@ const word = "red";
 numberOfOccurrencesInText(word,text);
 Expected Output: 4
 
+<-----------------test 5---------------------->
+Test: "It should return a word match regardless of case."
+Code: 
+const text = "red RED Red green Green GREEN";
+const word = "Red";
+numberOfOccurencesInText(word, text);
+Expected Output: 3
+
+<-----------------test 6---------------------->
+Test: "It should return a word match regardless of punction."
+Code:
+const text = "Red! Red. I like red, green, and yellow.";
+const word = "Red";
+numberOfOccurrencesInText(word,text);
+Expected Output:3 
+
+
 
 
 {This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}

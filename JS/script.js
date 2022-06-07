@@ -19,13 +19,17 @@ function wordCounter(text) {
 // wordCounter() function omitted for brevity.
 
 function numberOfOccurrencesInText(word, text) {
+  if (text.trim().lenth === 0) {
+    return 0;
+  }
   const wordArray = text.split(" ");
   let wordCount = 0;
   wordArray.forEach(function(element) {
-    if (word === element) {
-      wordCount++
+    if (element.toLowerCase().includes(word.toLowerCase())) {
+      wordCount++;
     }
   });
   return wordCount;
 }
+
 
